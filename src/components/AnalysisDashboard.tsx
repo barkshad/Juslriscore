@@ -151,13 +151,13 @@ export const AnalysisDashboard: React.FC<AnalysisDashboardProps> = ({ analysis }
   return (
     <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
       {/* Tabs Header */}
-      <div className="flex border-b border-slate-200 bg-slate-50/50">
+      <div className="flex border-b border-slate-200 bg-slate-50/50 overflow-x-auto no-scrollbar">
         {TABS.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={clsx(
-              "flex-1 flex items-center justify-center space-x-2 py-4 px-4 text-sm font-medium transition-all relative outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset",
+              "flex-1 min-w-[120px] flex items-center justify-center space-x-2 py-4 px-4 text-sm font-medium transition-all relative outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset whitespace-nowrap",
               activeTab === tab.id ? "text-blue-600 bg-white" : "text-slate-500 hover:text-slate-700 hover:bg-slate-100/50"
             )}
           >
@@ -174,7 +174,7 @@ export const AnalysisDashboard: React.FC<AnalysisDashboardProps> = ({ analysis }
       </div>
 
       {/* Content Area */}
-      <div className="p-6 min-h-[400px] relative">
+      <div className="p-4 sm:p-6 min-h-[400px] relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}

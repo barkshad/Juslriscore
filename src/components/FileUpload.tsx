@@ -59,7 +59,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileSelect, isLoading 
     <div className="w-full max-w-2xl mx-auto">
       <div
         className={clsx(
-          "relative border-2 border-dashed rounded-xl p-12 text-center transition-all duration-300 ease-in-out cursor-pointer",
+          "relative border-2 border-dashed rounded-xl p-8 sm:p-12 text-center transition-all duration-300 ease-in-out cursor-pointer",
           isDragging ? "border-blue-500 bg-blue-50/50 scale-[1.02]" : "border-slate-300 hover:border-slate-400 bg-white",
           isLoading && "opacity-50 pointer-events-none"
         )}

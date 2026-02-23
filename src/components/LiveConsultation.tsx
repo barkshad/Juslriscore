@@ -78,7 +78,7 @@ export const LiveConsultation: React.FC<LiveConsultationProps> = ({ isOpen, onCl
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
-            className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden"
+            className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden mx-4"
           >
             {/* Header */}
             <div className="bg-slate-900 px-6 py-4 flex items-center justify-between">

@@ -41,10 +41,10 @@ export default function App() {
         {/* Hero Section */}
         {!analysis && !isLoading && (
           <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 className="text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
               AI-Powered Legal Analysis
             </h2>
-            <p className="text-lg text-slate-600">
+            <p className="text-base sm:text-lg text-slate-600">
               Upload your legal documents for instant summary, deadline extraction, and risk assessment.
             </p>
           </div>
