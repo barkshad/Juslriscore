@@ -1,0 +1,7 @@
+{
+  "name": "JurisCore",
+  "description": "Universal Legal AI Dashboard for document analysis, deadline tracking, and risk assessment.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
